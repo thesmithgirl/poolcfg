@@ -1,3 +1,6 @@
 function price_update() {
-  $("#price").text("1000");
+  var price = $("#price").text();
+  price *= 1;
+  price += 1000;
+  $("#price").text(price);
 }
