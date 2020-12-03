@@ -1,2 +1,0 @@
-# poolcfg
-Pool configurator
