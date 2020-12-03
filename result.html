@@ -25,23 +25,21 @@
 <p>
 Hier erhalten Sie eine Auflistung Ihrer gewählten Komponenten.
 </p>
-<p>
-<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 012345
-</p>
-
-
 
 <p>
 Für ein persönliches und detailliertes Beratungsgespräch können Sie uns die Konfiguration zusenden.
 </br> Bitte füllen Sie dazu dieses Formular aus.
 </br> Wir setzen uns anschließend gerne mit Ihnen in Verbindung zur Terminvereinbarung.
 </p>
+<p> Bei Fragen kontaktieren Sie uns bitte:
+<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 012345
+</p>
 
 <form class="form-horizontal">
   <div class="form-group">
     <label for="eingabefeldName" class="col-sm-2 control-label">Name</label>
     <div class="col-sm-10">
-      <input type="name" class="form-control" id="eingabefeldName" placeholder="Vor- und Nachname">
+      <input type="name" class="form-control" id="eingabefeldName" required placeholder="Vor- und Nachname">
     </div>
     </div>
 
@@ -51,22 +49,39 @@ Für ein persönliches und detailliertes Beratungsgespräch können Sie uns die 
       <div class="input-group">
       <span class="input-group-addon">@</span>
 
-      <input type="email" class="form-control" id="eingabefeldEmail3" placeholder="Email">
+      <input type="email" class="form-control" id="eingabefeldEmail3" required placeholder="Email">
     </div>
   </div>
   </div>
 
+
+
+  <div class="row">
+
+    <label for="eingabefeldAddress" class="col-sm-2 control-label">Postleitzahl</label>
+    <div class="col-xs-2">
+      <input type="address" class="form-control" id="eingabefeldplz"pattern="[0-9].{3,4}" required placeholder="Postleitzahl">
+    </div>
+
+    <label for="eingabefeldAddress" class="col-sm-2 control-label">Ort</label>
+    <div class="col-xs-3">
+    <input type="address" class="form-control" id="eingabefeldort" required placeholder="Ort">
+    </div>
+
+  </div>
+<br>
   <div class="form-group">
     <label for="eingabefeldAddress" class="col-sm-2 control-label">Anschrift</label>
     <div class="col-sm-10">
-      <input type="address" class="form-control" id="eingabefeldAddress" placeholder="Straße, Hausnummer, Postleitzahl, Ort">
+      <input type="address" class="form-control" id="eingabefeldAddress" placeholder="Straße, Hausnummer">
     </div>
   </div>
+
 
   <div class="form-group">
     <label for="eingabefeldPhone" class="col-sm-2 control-label">Telefonnummer</label>
     <div class="col-sm-10">
-      <input type="phone" class="form-control" id="eingabefeldPhone" placeholder="Telefonnummer">
+      <input type="tel" class="form-control" id="eingabefeldPhone"   pattern="[0-9].{5,}" required placeholder="Telefonnummer">
     </div>
   </div>
 
