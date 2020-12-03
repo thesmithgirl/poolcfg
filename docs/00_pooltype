@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Poolcfg</title>
+<link rel="stylesheet" href="poolcfg.css" type="text/css">
+<script src="jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="poolcfg.js"></script>
+</head>
+
+
+<body>
+
+
+	<div class="container">
+  <h1>Poolvariante</h1>
+
+
+  <p>
+  	Geben Sie hier an, ob sie einen Laghetto Loungepool wünschen oder einen Pool von Magiline.
+  </p>
+
+
+
+
+
+
+  <form class="form">
+    <div class="form-group">
+  			<div class="btn-group-vertical" data-toggle="buttons">
+  			 <label class="btn btn-primary active">
+  				 <input type="radio" name="pooltype" id="playa1" autocomplete="off" checked>Playa 1
+  			 </label>
+         <div class="thumbnail">
+           <img src="..." alt="Bild Playa 1">
+           <div class="caption">
+             Wasserfläche (m): 1,40 x1,80
+             <br> Aufstellfläche (m): 2,20 x 2,20
+             <br> Wassertiefe (cm): 55
+             <br> Gesamthöhe (cm): 70
+           </div>
+         </div>
+
+  			 <label class="btn btn-primary">
+  				 <input type="radio" name="pooltype" id="playa2" autocomplete="off"> Playa2
+   		 		</label>
+  				<div class="panel panel-default">
+  				 <div class="panel-body">
+              Wasserfläche (m): 2,40 x1,80
+             <br> Aufstellfläche (m): 3,20 x 2,20
+             <br> Wassertiefe (cm): 55
+             <br> Gesamthöhe (cm): 70
+  				 </div>
+  				 </div>
+  			 <label class="btn btn-primary">
+  				 <input type="radio" name="pooltype" id="playa3" autocomplete="off"> Playa 3
+  			 </label>
+  			 <div class="panel panel-default">
+  				<div class="panel-body">
+            Wasserfläche (m): 3,40 x1,80
+           <br> Aufstellfläche (m): 4,20 x 2,20
+           <br> Wassertiefe (cm): 55
+           <br> Gesamthöhe (cm): 70
+  				</div>
+  				</div>
+          <label class="btn btn-primary">
+            <input type="radio" name="pooltype" id="standard" autocomplete="off"> Magiline Standard
+          </label>
+          <div class="panel panel-default">
+           <div class="panel-body">
+             Standard
+           </div>
+           </div>
+  			</div>
+    </div>
+
+
+<p><a class="btn btn-primary btn-lg" href="02_poolsize.html" role="button">Weiter
+	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+</a></p>
+
+
+</div>
+</body>
+
+</html>
