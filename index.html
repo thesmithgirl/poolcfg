@@ -66,21 +66,21 @@ Laghetto
 
 	<div>
 
-  <!-- Tabs-Navs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#start" role="tab" data-toggle="tab">Start</a></li>
-    <li role="presentation"><a href="#profil" role="tab" data-toggle="tab">Profil</a></li>
-    <li role="presentation"><a href="#nachrichten" role="tab" data-toggle="tab">Nachrichten</a></li>
-    <li role="presentation"><a href="#einstellungen" role="tab" data-toggle="tab">Einstellungen</a></li>
-  </ul>
-
-  <!-- Tab-Inhalte -->
-  <div class="tab-content">
 
 
+	<div id="collapse_outer">
 
 
-<div role="tabpanel" class="tab-pane active" id="start">
+<p><a data-toggle="collapse" data-parent="#collapse_outer"
+	class="btn btn-primary btn-lg" href="#co_welcome" role="button">test welcome</a></p>
+
+
+	<p><a data-toggle="collapse" data-parent="#collapse_outer"
+		class="btn btn-primary btn-lg" href="#co_pooltype" role="button">test pooltype</a></p>
+
+
+
+<div id="co_welcome" class="collapse in">
 
 
 <div class="container">
@@ -107,7 +107,7 @@ Konfigurieren Sie hier ihren Pool!
 	stellen kein detailliertes Angebot dar und ersetzen kein persönliches Beratungsgespräch.
 </div>
 
-<p><a class="btn btn-primary btn-lg" href="00_pooltype.html" role="button">Los geht's!</a></p>
+<p><a data-toggle="collapse" data-parent="#collapse_outer" class="btn btn-primary btn-lg" href="#co_pooltype" role="button">Los geht's!</a></p>
 
 
 
@@ -117,7 +117,7 @@ Konfigurieren Sie hier ihren Pool!
 </div>
 
 
-<div role="tabpanel" class="tab-pane" id="profil">
+<div  id="co_pooltype" class="collapse">
 
 
 	<div class="container">
@@ -183,22 +183,7 @@ Konfigurieren Sie hier ihren Pool!
 
 
 </div>
-<!doctype html>
-<html>
 
-<head>
-<title>Poolcfg</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="poolcfg.css" type="text/css">
-<script src="jquery-3.5.1.min.js"></script>
-<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
-<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-<script src="poolcfg.js"></script>
-</head>
-
-
-<body>
 	<div class="container">
 
 <h1>Größe und Tiefe</h1>
@@ -300,10 +285,6 @@ Konfigurieren Sie hier ihren Pool!
 
 
 </div>
-</body>
-
-
-</html>
 
 </div>
 </div>
