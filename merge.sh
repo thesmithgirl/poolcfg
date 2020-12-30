@@ -6,6 +6,7 @@ cat \
    02_pooltype.html \
    Magiline/M00_header.html \
    Magiline/M01_poolsize.html \
+   Magiline/M02_cleaner.html \
    Magiline/M99_footer.html \
    99_footer.html \
    > index.html

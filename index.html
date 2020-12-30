@@ -21,14 +21,6 @@
 <div class="panel"><!-- https://stackoverflow.com/a/19426220 -->
 
 
-<p><a data-toggle="collapse" data-parent="#collapse_outer"
-	class="btn btn-primary btn-lg" href="#co_welcome" role="button">test welcome</a></p>
-
-
-	<p><a data-toggle="collapse" data-parent="#collapse_outer"
-		class="btn btn-primary btn-lg" href="#co_pooltype" role="button">test pooltype</a></p>
-
-
 
 <div id="co_welcome" class="collapse in">
 
@@ -67,7 +59,7 @@ Konfigurieren Sie hier ihren Pool!
 </div>
 
 
-<div  id="co_pooltype" class="collapse">
+<div id="co_pooltype" class="collapse">
 
 
 	<div class="container">
@@ -115,7 +107,7 @@ Konfigurieren Sie hier ihren Pool!
 
 -->
 
-<p><a class="btn btn-primary btn-lg" href="M01_poolsize.html" role="button">Magiline Pool (Massivbauweise)
+<p><a data-toggle="collapse" data-parent="#collapse_outer" class="btn btn-primary btn-lg" href="#co_magiline" role="button">Magiline Pool (Massivbauweise)
 	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 </a>
 </p>
@@ -133,8 +125,14 @@ Konfigurieren Sie hier ihren Pool!
 
 
 </div>
+<div id="co_magiline" class="collapse">
+<div id="collapse_magiline" class="container">
+<div class="panel">
 
-	<div class="container">
+
+<div id="cm_poolsize" class="collapse in">
+
+
 
 <h1>Größe und Tiefe</h1>
 
@@ -226,14 +224,44 @@ Konfigurieren Sie hier ihren Pool!
 
 </form>
 
-<p><a class="btn btn-primary btn-lg" href="M02_cleaner.html" role="button">Weiter
+<p><a data-toggle="collapse" data-parent="#collapse_magiline" class="btn btn-primary btn-lg" href="#cm_cleaner" role="button">Weiter
 	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 
 </a></p>
+</div>
+
+<div id="cm_cleaner" class="collapse">
+
+    <h1>Filter</h1>
 
 
+    <p>
+    	Geben Sie hier an welchen Filter Sie möchten.
+    </p>
+
+    <form class="form">
+      <div class="form-group">
+    			<div class="btn-group-horizontal" data-toggle="buttons">
+
+           <label class="btn btn-primary active">
+    				 <input type="radio" name="filter" id="filter1" autocomplete="off" checked> Kartuschenfilter NFX (beim Pool inkl.)
+    			 </label>
+
+           <label class="btn btn-primary">
+    				 <input type="radio" name="filter" id="filter2" autocomplete="off"> Sandfilter ZPF
+     		 		</label>
 
 
+    			</div>
+        </div>
+
+
+      <p><a class="btn btn-primary btn-lg" href="M03_stairs.html" role="button">Weiter
+    		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a></p>
+</div>
+</div>
+</div>
 </div>
 
 </div>
