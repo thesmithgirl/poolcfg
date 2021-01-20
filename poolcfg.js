@@ -4,3 +4,7 @@ function price_update() {
   price += 1000;
   $("#price").text(price);
 }
+
+function debug() {
+  $(".debug").show();
+}
