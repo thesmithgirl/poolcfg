@@ -14,6 +14,7 @@ cat \
    Magiline/M07_cover.html \
    Magiline/M08_dosing.html \
    Magiline/M09_accessories.html \
+   Magiline/M98_result.html \
    Magiline/M99_footer.html \
    Laghetto/L00_header.html \
    Laghetto/L01_modell.html \
@@ -25,7 +26,7 @@ cat \
    Laghetto/L03_heating.html \
    Laghetto/L04_cover.html \
    Laghetto/L05_dosing.html \
+   Laghetto/L98_result.html \
    Laghetto/L99_footer.html \
-   98_result.html \
    99_footer.html \
    > index.html
