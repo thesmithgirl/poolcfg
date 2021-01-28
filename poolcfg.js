@@ -30,6 +30,14 @@ function price_update_m_cleaner() {
   return cleaner;
 }
 
+$(window).on('load', function() {
+  price_update_m();
+  $(":radio").change(price_update_m);
+  $(":checkbox").change(price_update_m);
+});
+
+
+
 function debug() {
   $(".debug").show();
 }
