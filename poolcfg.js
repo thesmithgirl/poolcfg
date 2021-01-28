@@ -18,6 +18,14 @@ function price_update_m_poolsize() {
   return price_sqm * length * width * depth;
 }
 
+
+function price_update_m_cleaner() {
+  var cleaner = $('input[name="m_cleaner"]:checked').val();
+  cleaner = parseFloat(cleaner);
+
+  return cleaner;
+}
+
 function debug() {
   $(".debug").show();
 }
