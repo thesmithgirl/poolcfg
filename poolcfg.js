@@ -1,6 +1,10 @@
 function price_update_m() {
   var price = 1000;
+  price += price_update_m_poolsize();
+  price += price_update_m_cleaner();
 
+  price += " €";
+  $("#m_price").text(price);
 }
 
 function price_update_m_poolsize() {
