@@ -2,6 +2,11 @@
     display: none;
 }
 
+#m_price {
+  font-size: 25pt;
+  float: right;
+}
+
 ul.ks-cboxtags {
     list-style: none;
     padding: 20px;
