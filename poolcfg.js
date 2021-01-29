@@ -4,6 +4,7 @@ function price_update_m() {
   price += price_update_m_cleaner();
   price += price_update_m_stairs();
   price += price_update_m_poolfoil();
+  price += price_update_m_spotlight();
   price += price_update_m_accessories();
   price += " €";
   $("#m_price").text(price);
@@ -44,6 +45,13 @@ function price_update_m_poolfoil() {
   poolfoil = parseFloat(poolfoil);
 
   return poolfoil;
+}
+
+function price_update_m_spotlight() {
+  var spotlight = $('input[name="m_spotlight"]:checked').val();
+  spotlight = parseFloat(spotlight);
+
+  return spotlight;
 }
 
 
