@@ -783,7 +783,7 @@ Für ein persönliches und detailliertes Beratungsgespräch können Sie uns die 
   			<ul class="nav navbar-nav">
   			 <li class="active"><a href="index.html">Startseite</a></li>
 
-  			 <li><a data-toggle="collapse" data-parent="#collapse_laghetto" href="#cl_modell">Laghetto Modell</a></li>
+  			 <li><a data-toggle="collapse" data-parent="#collapse_laghetto" href="#cl_poolsize">Laghetto Größe und Modell</a></li>
   			 <li> <div class="dropdown btn-group">
   			   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
   			     Größe
@@ -805,52 +805,7 @@ Für ein persönliches und detailliertes Beratungsgespräch können Sie uns die 
   		</div>
 
   	</nav>
-<div id="cl_modell" class="collapse in">
-
-
-
-  <h1>Poolmodelle Laghetto</h1>
-
-
-  <p>
-  	Geben Sie hier an, welches Modell von Laghetto Sie wünschen.
-  </p>
-
-
-
-
-<p><a data-toggle="collapse" data-parent="#collapse_laghetto" class="btn btn-primary btn-lg" href="#cl_poolsize_playa" role="button">Playa
-	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-</a>
-</p>
-
-	<p><a data-toggle="collapse" data-parent="#collapse_laghetto" class="btn btn-primary btn-lg" href="#cl_poolsize_playaliving" role="button">Playa Living
-		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	</a>
-	</p>
-
-	<p><a data-toggle="collapse" data-parent="#collapse_laghetto" class="btn btn-primary btn-lg" href="#cl_poolsize_dvdiva" role="button">Dolce Vita - Diva
-		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	</a>
-	</p>
-
-	<p><a data-toggle="collapse" data-parent="#collapse_laghetto" class="btn btn-primary btn-lg" href="#cl_poolsize_dvdivalti" role="button">Dolce Vita - Diva LTI
-		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	</a>
-	</p>
-
-	<p><a data-toggle="collapse" data-parent="#collapse_laghetto" class="btn btn-primary btn-lg" href="#cl_poolsize_dvdivayacht" role="button">Dolce Vita - Yacht
-		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	</a>
-	</p>
-
-
-
-
-
-
-</div>
-<div id="cl_poolsize_playa" class="collapse">
+<div id="cl_poolsize" class="collapse in">
 
   <h1>Poolgröße Laghetto</h1>
 
@@ -860,82 +815,67 @@ Für ein persönliches und detailliertes Beratungsgespräch können Sie uns die 
   </p>
 
 
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Laghetto Modell und Größe</label>
+  		<div class="col-sm-10">
+  			<div class="btn-group-horizontal" data-toggle="buttons">
 
-	<p><a data-toggle="collapse" data-parent="#collapse_laghetto" class="btn btn-primary btn-lg" href="#cl_heating" role="button">Weiter
-		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	</a>
-	</p>
-
-
-
-</div>
-<div id="cl_poolsize_playaliving" class="collapse">
-
-  <h1>Poolgröße Laghetto</h1>
-
-
-  <p>
-  	Geben Sie hier an, welche Größe Ihr Pool von Laghetto haben soll.
-  </p>
-
-
-
-	<p><a data-toggle="collapse" data-parent="#collapse_laghetto" class="btn btn-primary btn-lg" href="#cl_heating" role="button">Weiter
-		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	</a>
-	</p>
-
-
-
-</div>
-<div id="cl_poolsize_dvdiva" class="collapse">
-
-  <h1>Poolgröße Laghetto</h1>
-
-
-  <p>
-  	Geben Sie hier an, welche Größe Ihr Pool von Laghetto haben soll.
-  </p>
-
-
-
-	<p><a data-toggle="collapse" data-parent="#collapse_laghetto" class="btn btn-primary btn-lg" href="#cl_heating" role="button">Weiter
-		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	</a>
-	</p>
-
-
-
-</div>
-<div id="cl_poolsize_dvdivalti" class="collapse">
-
-  <h1>Poolgröße Laghetto</h1>
-
-
-  <p>
-  	Geben Sie hier an, welche Größe Ihr Pool von Laghetto haben soll.
-  </p>
-
-
-
-	<p><a data-toggle="collapse" data-parent="#collapse_laghetto" class="btn btn-primary btn-lg" href="#cl_heating" role="button">Weiter
-		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	</a>
-	</p>
+          <br> DV Diva
+  			 <label class="btn btn-primary active">
+  				 <input type="radio" name="l_modelsize" value="3000" id="l_modelsize3" autocomplete="off" checked> DV Diva 1
+  			 </label>
+  			 <label class="btn btn-primary">
+  				 <input type="radio" name="l_modelsize" value="4000" id="l_modelsize4" autocomplete="off"> DV Diva 2
+   		 		</label>
 
 
 
 
 
-</div>
-<div id="cl_poolsize_dvdivayacht" class="collapse">
+            <br>  DV Diva LTI
+  			 <label class="btn btn-primary">
+  				 <input type="radio" name="l_modelsize" value="5000" id="l_modelsize5" autocomplete="off"> DV Diva LTI 1
+  			 </label>
+  			 <label class="btn btn-primary">
+  				 <input type="radio" name="l_modelsize" value="6000" id="l_modelsize6" autocomplete="off"> DV Diva LTI 2
+  			 </label>
 
-  <h1>Poolgröße Laghetto</h1>
+
+         <br> DV Diva Yacht
+  			 <label class="btn btn-primary">
+  				 <input type="radio" name="l_modelsize" value="7000" id="l_modelsize7" autocomplete="off"> DV Diva Yacht 1
+  			 </label>
+  			 <label class="btn btn-primary">
+  				 <input type="radio" name="l_modelsize" value="8000" id="l_modelsize8" autocomplete="off"> DV Diva Yacht 2
+  			 </label>
+
+         <br> Playa
+  			 <label class="btn btn-primary">
+  				 <input type="radio" name="l_modelsize" value="9000" id="l_modelsize9" autocomplete="off"> Playa 1
+  			 </label>
+  			 <label class="btn btn-primary">
+  				 <input type="radio" name="l_modelsize" value="10000" id="l_modelsize10" autocomplete="off">  Playa 2
+  			 </label>
+
+         <br> Playa Living
+         <label class="btn btn-primary">
+           <input type="radio" name="l_modelsize" value="11000" id="l_modelsize11" autocomplete="off"> Playa Living 1
+           </label>
+
+         <label class="btn btn-primary">
+           <input type="radio" name="l_modelsize" value="12000" id="l_modelsize12" autocomplete="off">  Playa Living 2
+         </label>
 
 
-  <p>
-  	Geben Sie hier an, welche Größe Ihr Pool von Laghetto haben soll.
-  </p>
+         <label class="btn btn-primary">
+           <input type="radio" name="l_modelsize" value="12000" id="l_modelsize12" autocomplete="off">  Playa Living 3
+         </label>
+
+
+  			</div>
+      </div>
+    </div>
 
 
 
@@ -943,7 +883,6 @@ Für ein persönliches und detailliertes Beratungsgespräch können Sie uns die 
 		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 	</a>
 	</p>
-
 
 
 

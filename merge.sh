@@ -17,12 +17,7 @@ cat \
    Magiline/M98_result.html \
    Magiline/M99_footer.html \
    Laghetto/L00_header.html \
-   Laghetto/L01_modell.html \
-   Laghetto/L02_poolsize_playa.html \
-   Laghetto/L02_poolsize_playaliving.html \
-   Laghetto/L02_poolsize_dvdiva.html \
-   Laghetto/L02_poolsize_dvdivalti.html \
-   Laghetto/L02_poolsize_dvdivayacht.html \
+   Laghetto/L02_poolsize.html \
    Laghetto/L03_heating.html \
    Laghetto/L04_cover.html \
    Laghetto/L05_dosing.html \
@@ -30,3 +25,12 @@ cat \
    Laghetto/L99_footer.html \
    99_footer.html \
    > index.html
+
+
+
+#   Laghetto/L01_modell.html \
+#   Laghetto/L02_poolsize_playa.html \
+#   Laghetto/L02_poolsize_playaliving.html \
+#   Laghetto/L02_poolsize_dvdiva.html \
+#   Laghetto/L02_poolsize_dvdivalti.html \
+#   Laghetto/L02_poolsize_dvdivayacht.html \
