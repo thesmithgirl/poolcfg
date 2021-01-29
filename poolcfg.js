@@ -68,21 +68,16 @@ function get_mdosing() {
 
 function get_maccessories() {
 
+// https://forum.jquery.com/topic/jquery-get-label-text#14737000000345079
+
+  var m_accessories = $('input:checked + label').map(function() {
+  return $(this).text();
+  }).get();
+  //alert(m_accessories);
+
+  return m_accessories;
 
 
-/*
-
-
-  var ret = $('input[name="m_accessories"]:checked').each(function(i, obj) {
-    ret += $(obj).parent('label').text();
-  });
-
-  return ret.toString();
-
-*/
-
-  //alert (m_accessories);
-  //return m_accessories;
 }
 
 
