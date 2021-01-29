@@ -7,6 +7,7 @@ function price_update_m() {
   price += price_update_m_spotlight();
   price += price_update_m_heating();
   price += price_update_m_cover();
+  price += price_update_m_dosing();
   price += price_update_m_accessories();
   price += " €";
   $("#m_price").text(price);
@@ -70,6 +71,12 @@ function price_update_m_cover() {
   return cover;
 }
 
+function price_update_m_dosing() {
+  var dosing = $('input[name="m_dosing"]:checked').val();
+  dosing = parseFloat(dosing);
+
+  return dosing;
+}
 
 
 function price_update_m_accessories() {
