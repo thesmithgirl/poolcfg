@@ -1,3 +1,26 @@
+function cfg_summary_l () {
+  var l_cfg = "";
+  l_cfg += get_lheating();
+
+
+$("#l_cfg").text(l_cfg);
+}
+
+function get_lheating() {
+  var l_heating = $("input[name='l_heating']:checked").parent('label').text();
+
+  return l_heating;
+
+}
+
+
+$(window).on('load', function() {
+  cfg_summary_l();
+  $(":radio").change(cfg_summary_l);
+  $(":checkbox").change(cfg_summary_l);
+});
+
+
 function price_update_l() {
   var price = 1000;
   price += price_update_l_poolsize();

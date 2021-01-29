@@ -1,6 +1,13 @@
 .debug {
     display: none;
 }
+
+#l_cfg {
+  font-size: 12pt;
+  float: right;
+}
+
+
 #l_price {
   font-size: 25pt;
   float: right;
@@ -10,6 +17,7 @@
   font-size: 25pt;
   float: right;
 }
+
 
 ul.ks-cboxtags {
     list-style: none;
