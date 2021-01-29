@@ -1,6 +1,10 @@
 .debug {
     display: none;
 }
+#l_price {
+  font-size: 25pt;
+  float: right;
+}
 
 #m_price {
   font-size: 25pt;

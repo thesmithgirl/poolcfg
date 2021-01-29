@@ -1,3 +1,34 @@
+function price_update_l() {
+  var price = 1000;
+  price += price_update_l_poolsize();
+
+  price += " €";
+  $("#l_price").text(price);
+}
+
+function price_update_l_poolsize() {
+  var poolsize = $('input[name="l_poolsize"]:checked').val();
+  poolsize = parseFloat(poolsize);
+
+  return poolsize;
+}
+
+
+
+
+$(window).on('load', function() {
+  price_update_l();
+  $(":radio").change(price_update_l);
+  $(":checkbox").change(price_update_l);
+});
+
+
+
+
+
+
+
+
 function price_update_m() {
   var price = 1000;
   price += price_update_m_poolsize();
