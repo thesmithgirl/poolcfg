@@ -3,7 +3,7 @@ function price_update_l() {
   price += price_update_l_poolsize();
   price += price_update_l_heating();
   price += price_update_l_cover();
-
+  price += price_update_l_dosing();
   price += " €";
   $("#l_price").text(price);
 }
@@ -29,6 +29,12 @@ function price_update_l_cover() {
   return cover;
 }
 
+function price_update_l_dosing() {
+  var dosing = $('input[name="l_dosing"]:checked').val();
+  dosing = parseFloat(dosing);
+
+  return dosing;
+}
 
 
 $(window).on('load', function() {
