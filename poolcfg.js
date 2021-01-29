@@ -1,3 +1,28 @@
+function cfg_summary_m () {
+  var m_cfg = "";
+  m_cfg += get_mpoolsize();
+$("#m_cfg").text(m_cfg);
+}
+
+function get_mpoolsize() {
+  var m_length = $("input[name='m_length']:checked").parent('label').text();
+  var m_width = $("input[name='m_width']:checked").parent('label').text();
+  var m_depth = $("input[name='m_depth']:checked").parent('label').text();
+  var m_poolsize = m_length + "x" + m_width + "x" + m_depth;
+  return m_poolsize;
+
+}
+
+
+
+$(window).on('load', function() {
+  cfg_summary_m();
+  $(":radio").change(cfg_summary_m);
+  $(":checkbox").change(cfg_summary_m);
+});
+
+
+
 function cfg_summary_l () {
   var l_cfg = "";
   l_cfg += get_lheating();
@@ -7,8 +32,6 @@ function cfg_summary_l () {
   l_cfg += get_lcover();
   l_cfg += "\n";
   l_cfg += get_ldosing();
-
-
 
 $("#l_cfg").text(l_cfg);
 }
