@@ -6,6 +6,7 @@ function price_update_m() {
   price += price_update_m_poolfoil();
   price += price_update_m_spotlight();
   price += price_update_m_heating();
+  price += price_update_m_cover();
   price += price_update_m_accessories();
   price += " €";
   $("#m_price").text(price);
@@ -61,6 +62,14 @@ function price_update_m_heating() {
 
   return heating;
 }
+
+function price_update_m_cover() {
+  var cover = $('input[name="m_cover"]:checked').val();
+  cover = parseFloat(cover);
+
+  return cover;
+}
+
 
 
 function price_update_m_accessories() {
