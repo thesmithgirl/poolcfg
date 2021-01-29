@@ -1,6 +1,7 @@
 function price_update_l() {
   var price = 1000;
   price += price_update_l_poolsize();
+  price += price_update_l_heating();
 
   price += " €";
   $("#l_price").text(price);
@@ -13,6 +14,12 @@ function price_update_l_poolsize() {
   return poolsize;
 }
 
+function price_update_l_heating() {
+  var heating = $('input[name="l_heating"]:checked').val();
+  heating = parseFloat(heating);
+
+  return heating;
+}
 
 
 
