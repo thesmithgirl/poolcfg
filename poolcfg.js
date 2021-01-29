@@ -2,6 +2,7 @@ function price_update_m() {
   var price = 1000;
   price += price_update_m_poolsize();
   price += price_update_m_cleaner();
+  price += price_update_m_stairs();
   price += price_update_m_accessories();
   price += " €";
   $("#m_price").text(price);
@@ -28,6 +29,13 @@ function price_update_m_cleaner() {
   cleaner = parseFloat(cleaner);
 
   return cleaner;
+}
+
+function price_update_m_stairs() {
+  var stairs = $('input[name="m_stairs"]:checked').val();
+  stairs = parseFloat(stairs);
+
+  return stairs;
 }
 
 
