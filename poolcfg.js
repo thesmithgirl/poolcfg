@@ -2,6 +2,7 @@ function price_update_l() {
   var price = 1000;
   price += price_update_l_poolsize();
   price += price_update_l_heating();
+  price += price_update_l_cover();
 
   price += " €";
   $("#l_price").text(price);
@@ -19,6 +20,13 @@ function price_update_l_heating() {
   heating = parseFloat(heating);
 
   return heating;
+}
+
+function price_update_l_cover() {
+  var cover = $('input[name="l_cover"]:checked').val();
+  cover = parseFloat(cover);
+
+  return cover;
 }
 
 
