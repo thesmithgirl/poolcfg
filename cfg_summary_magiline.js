@@ -1,25 +1,34 @@
 function cfg_summary_m () {
   var m_cfg = "";
+  m_cfg += "<b>Poolgröße: </b>";
   m_cfg += get_mpoolsize();
-  m_cfg += "\n";
+  m_cfg += "<br>";
+  m_cfg += "<b>Filter: </b>";
   m_cfg += get_mcleaner();
-  m_cfg += "\n";
+  m_cfg += "<br>";
+  m_cfg += "<b>Treppe: </b>";
   m_cfg += get_mstairs();
-  m_cfg += "\n";
+  m_cfg += "<br>";
+  m_cfg += "<b>Folie: </b>";
   m_cfg += get_mpoolfoil();
-  m_cfg += "\n";
+  m_cfg += "<br>";
+  m_cfg += "<b>Scheinwerfer: </b>";
   m_cfg += get_mspotlight();
-  m_cfg += "\n";
+  m_cfg += "<br>";
+  m_cfg += "<b>Heizung: </b>";
   m_cfg += get_mheating();
-  m_cfg += "\n";
+  m_cfg += "<br>";
+  m_cfg += "<b>Abdeckung: </b>";
   m_cfg += get_mcover();
-  m_cfg += "\n";
+  m_cfg += "<br>";
+  m_cfg += "<b>Dosiergerät: </b>";
   m_cfg += get_mdosing();
-  m_cfg += "\n";
+  m_cfg += "<br>";
+  m_cfg += "<b>Zubehör: </b>";
   m_cfg += get_maccessories();
 
 
-  $("#m_cfg").text(m_cfg);
+  $("#m_cfg").html(m_cfg);
 }
 
 function get_mpoolsize() {
