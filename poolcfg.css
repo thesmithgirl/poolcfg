@@ -2,26 +2,14 @@
     display: none;
 }
 
-#m_cfg {
+#m_cfg, #l_cfg {
   font-size: 12pt;
   float: right;
 }
 
 
-#l_cfg {
-  font-size: 12pt;
-  float: right;
-}
 
-
-#l_price {
-  font-size: 25pt;
-  float: right;
-}
-
-
-
-#m_price {
+#m_price, #l_price {
   font-size: 25pt;
   float: right;
 }
