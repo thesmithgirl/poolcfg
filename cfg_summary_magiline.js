@@ -83,6 +83,10 @@ function get_maccessories() {
     return $(this).text();
   }).get().join(", ");
 
+  if (!m_accessories) {
+    m_accessories = "Keine";
+  }
+
   return m_accessories;
 
 }
