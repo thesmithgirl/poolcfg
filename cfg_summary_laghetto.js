@@ -2,15 +2,19 @@
 
 function cfg_summary_l () {
   var l_cfg = "";
-  l_cfg += get_lheating();
-  l_cfg += "\n";
+  l_cfg += "<b>Poolgröße: </b>";
   l_cfg += get_lpoolsize();
-  l_cfg += "\n";
+  l_cfg += "<br>";
+  l_cfg += "<b>Heizung: </b>";
+  l_cfg += get_lheating();
+  l_cfg += "<br>";
+  l_cfg += "<b>Abdeckung: </b>";
   l_cfg += get_lcover();
-  l_cfg += "\n";
+  l_cfg += "<br>";
+  l_cfg += "<b>Dosierung: </b>";
   l_cfg += get_ldosing();
 
-$("#l_cfg").text(l_cfg);
+$("#l_cfg").html(l_cfg);
 }
 
 function get_lpoolsize() {
