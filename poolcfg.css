@@ -15,6 +15,13 @@
 }
 
 
+
+#pooltype_choice .btn-group {
+  margin-top: 30px;
+  margin-right: 80px;
+
+}
+
 ul.ks-cboxtags {
     list-style: none;
     padding: 20px;
