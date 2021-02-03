@@ -80,12 +80,10 @@ function get_maccessories() {
 // https://forum.jquery.com/topic/jquery-get-label-text#14737000000345079
 
   var m_accessories = $('input:checked + label').map(function() {
-  return $(this).text();
-  }).get();
-  //alert(m_accessories);
+    return $(this).text();
+  }).get().join(", ");
 
   return m_accessories;
-
 
 }
 
