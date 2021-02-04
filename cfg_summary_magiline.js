@@ -28,7 +28,7 @@ function cfg_summary_m () {
   m_cfg += get_mdosing();
   m_cfg += "<br>";
   m_cfg += "<b>Zubehör: </b>";
-  m_cfg += get_maccessories();
+  m_cfg += get_mextras();
 
 
   $("#m_cfg").html(m_cfg);
@@ -88,19 +88,19 @@ function get_mdosing() {
   return m_dosing;
 }
 
-function get_maccessories() {
+function get_mextras() {
 
 // https://forum.jquery.com/topic/jquery-get-label-text#14737000000345079
 
-  var m_accessories = $('input:checked + label').map(function() {
+  var m_extras = $('input:checked + label').map(function() {
     return $(this).text();
   }).get().join(", ");
 
-  if (!m_accessories) {
-    m_accessories = "Keine";
+  if (!m_extras) {
+    m_extras = "Keine";
   }
 
-  return m_accessories;
+  return m_extras;
 
 }
 

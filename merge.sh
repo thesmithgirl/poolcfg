@@ -13,7 +13,7 @@ cat \
    Magiline/M06_heating.html \
    Magiline/M07_cover.html \
    Magiline/M08_dosing.html \
-   Magiline/M09_accessories.html \
+   Magiline/M09_extras.html \
    Magiline/M98_result.html \
    Magiline/M99_footer.html \
    Laghetto/L00_header.html \
