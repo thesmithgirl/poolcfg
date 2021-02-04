@@ -12,6 +12,9 @@ function cfg_summary_m () {
   m_cfg += "<b>Folie: </b>";
   m_cfg += get_mpoolfoil();
   m_cfg += "<br>";
+  m_cfg += "<b>Rutschfeste Folie: </b>";
+  m_cfg += get_mpoolfoil_slip();
+  m_cfg += "<br>";
   m_cfg += "<b>Scheinwerfer: </b>";
   m_cfg += get_mspotlight();
   m_cfg += "<br>";
@@ -53,6 +56,16 @@ function get_mstairs() {
 function get_mpoolfoil() {
   var m_poolfoil = $("input[name='m_poolfoil']:checked").parent('label').text();
   return m_poolfoil;
+}
+
+function get_mpoolfoil_slip() {
+  var m_poolfoil_slip = $("input[name='m_poolfoil_slip']:checked").parent('label').text();
+  if (m_poolfoil_slip)
+    m_poolfoil_slip = "Ja";
+  else {
+    m_poolfoil_slip = "Nein";
+  }
+  return m_poolfoil_slip;
 }
 
 function get_mspotlight() {
