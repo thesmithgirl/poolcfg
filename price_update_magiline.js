@@ -12,8 +12,8 @@ function price_update_m() {
   price += price_update_m_cover();
   price += price_update_m_dosing();
   price += price_update_m_accessories();
-  price += " €";
-  $("#m_price").text(Math.ceil(price));
+  price = Math.ceil(price) + " €";
+  $("#m_price").text(price);
 }
 
 function price_update_m_poolsize() {
