@@ -53,10 +53,15 @@ function price_update_m_poolfoil() {
 }
 
 function price_update_m_poolfoil_slip() {
-  var poolfoil_slip = $('input[name="m_poolfoil_slip"]:checked').val();
-  poolfoil_slip = parseFloat(poolfoil_slip);
-  return poolfoil_slip;
+  var ret = 0;
+  $('input[name="m_poolfoil_slip"]:checked').each(function(i, obj) {
+    ret += parseFloat($(obj).val());
+  });
+
+  return ret;
 }
+
+
 
 function price_update_m_spotlight() {
   var spotlight = $('input[name="m_spotlight"]:checked').val();
