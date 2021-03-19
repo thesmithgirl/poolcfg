@@ -48,7 +48,7 @@ function price_update_m_stairs() {
 function price_update_m_poolfoil() {
   var poolfoil = $('input[name="m_poolfoil"]:checked').val();
   poolfoil = parseFloat(poolfoil);
-
+  poolfoil = price * poolfoil/100;
   return poolfoil;
 }
 
