@@ -5,7 +5,7 @@ function price_update_m() {
   price += price_update_m_poolsize();
   price += price_update_m_cleaner();
   price += price_update_m_stairs();
-  price += price_update_m_poolfoil();
+  price += price_update_m_poolfoil()/100;
   price += price_update_m_spotlight();
   price += price_update_m_heating();
   price += price_update_m_cover();
@@ -48,7 +48,6 @@ function price_update_m_stairs() {
 function price_update_m_poolfoil() {
   var poolfoil = $('input[name="m_poolfoil"]:checked').val();
   poolfoil = parseFloat(poolfoil);
-  poolfoil = price * poolfoil/100;
   return poolfoil;
 }
 
