@@ -53,7 +53,7 @@ function price_update_m_poolfoil() {
 }
 
 function price_update_m_poolfoil_slip() {
-  var poolfoil_slip = $('input[name="m_poolfoil"]:checked').val();
+  var poolfoil_slip = $('input[name="m_poolfoil_slip"]:checked').val();
   poolfoil_slip = parseFloat(poolfoil_slip);
   return poolfoil_slip;
 }
