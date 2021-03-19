@@ -5,7 +5,7 @@ function price_update_m() {
   price += price_update_m_poolsize();
   price += price_update_m_cleaner();
   price += price_update_m_stairs();
-  price += price_update_m_poolfoil()/100;
+  price += (price/100)*price_update_m_poolfoil();
   price += price_update_m_spotlight();
   price += price_update_m_heating();
   price += price_update_m_cover();
