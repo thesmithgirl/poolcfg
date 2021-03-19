@@ -6,6 +6,7 @@ function price_update_m() {
   price += price_update_m_cleaner();
   price += price_update_m_stairs();
   price += (price/100)*price_update_m_poolfoil();
+  price += (price/100)*price_update_m_poolfoil_slip();
   price += price_update_m_spotlight();
   price += price_update_m_heating();
   price += price_update_m_cover();
@@ -49,6 +50,12 @@ function price_update_m_poolfoil() {
   var poolfoil = $('input[name="m_poolfoil"]:checked').val();
   poolfoil = parseFloat(poolfoil);
   return poolfoil;
+}
+
+function price_update_m_poolfoil_slip() {
+  var poolfoil_slip = $('input[name="m_poolfoil"]:checked').val();
+  poolfoil_slip = parseFloat(poolfoil_slip);
+  return poolfoil_slip;
 }
 
 function price_update_m_spotlight() {
