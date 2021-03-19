@@ -1,7 +1,7 @@
 
 
 function price_update_m() {
-  var price = 1000;
+  var price = 7000;
   price += price_update_m_poolsize();
   price += price_update_m_cleaner();
   price += price_update_m_stairs();
@@ -17,7 +17,7 @@ function price_update_m() {
 }
 
 function price_update_m_poolsize() {
-  var price_sqm = 1000;
+  var price_sqm = 160;
 
   var length = $('input[name="m_length"]:checked').val();
   length = parseFloat(length);
@@ -28,7 +28,7 @@ function price_update_m_poolsize() {
   var depth = $('input[name="m_depth"]:checked').val();
   depth = parseFloat(depth);
 
-  return price_sqm * length * width * depth;
+  return (price_sqm * length * width )+ depth;
 }
 
 
